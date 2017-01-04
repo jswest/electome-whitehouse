@@ -82,6 +82,9 @@
 #item-2 {
   background-color: rgba(0, 0, 0, 0.1);
   padding: 100px 0; }
+  #item-2 header p {
+    margin: 10px auto;
+    width: 960px; }
   #item-2 header h1 {
     font-family: "Playfair Display";
     font-size: 40px;
