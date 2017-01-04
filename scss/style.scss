@@ -1,0 +1,166 @@
+$white: #ffffff;
+$black: #000000;
+$blue: #3868AF;
+$lightblue: #7BB0FF;
+$accent: #FBC861;
+
+$body: "Merriweather";
+$sans: "Montserrat";
+$serif: "Playfair Display";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+#persist-header {
+	background-color: transparentize( $white, 0.5 );
+	-webkit-backdrop-filter: blur(10px);
+	border-bottom: 1px solid transparentize( $white, 0.25 );
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 65px;
+	z-index: 2;
+	h1 {
+		color: darken( $blue, 25% );
+		font-family: $serif;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 1;
+		padding-top: 10px;
+	}
+	h2 {
+		color: darken( $blue, 25% );
+		font-family: $sans;
+		font-size: 10px;
+		font-weight: 100;
+		letter-spacing: 2px;
+		line-height: 1;
+		margin-top: 10px;
+		text-transform: uppercase;
+	}
+}
+#well {
+	position: relative;
+}
+
+.container {
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0 20px;
+	max-width: 960px;
+	width: 100%;
+}
+
+.tweet-embed {
+	margin: 0 auto;
+	max-width: 500px;
+	width: 100%;
+}
+.text {
+	p {
+		color: $black;
+		font-family: $body;
+		font-size: 20px;
+		line-height: 2;
+		margin: 40px auto;
+		width: 640px;
+		&.first::first-line {
+			color: $accent;
+			font-weight: 800;
+		}
+	}
+}
+
+#item-0 {
+	background: linear-gradient( to right, $blue 0%, darken( $accent, 50% ) 100% );
+	padding: 100px 0;
+	width: 100%;
+	header {
+		padding: 100px 0;
+		h1 {
+			color: $white;
+			font-size: 75px;
+			font-family: $serif;
+			font-weight: 400;
+			text-align: center;
+		}
+	}
+	p {
+		color: $white;
+	}
+}
+#item-1 {
+	section {
+		padding: 100px 0;
+	}
+}
+
+#viz-base-dropdown-name {
+	color: $blue;
+}
+#viz-comparator-dropdown-name {
+	color: darken( $accent, 25% );
+}
+
+#item-2 {
+	background-color: transparentize( $black, 0.9 );
+	padding: 100px 0;
+	header {
+		h1 {
+			font-family: $serif;
+			font-size: 40px;
+			line-height: 1;
+			margin: 0 auto;
+			width: 960px;
+		}
+		.viz-dropdown-wrapper {
+			cursor: pointer;
+			display: inline;
+			position: relative;
+		}
+		.viz-dropdown-name {
+			border-bottom: 1px dotted black;
+		}
+		.viz-dropdown {
+			cursor: pointer;
+			display: none;
+			list-style: none;
+			position: absolute;
+			top: 60px;
+			left: 0;
+			&.active {
+				display: block;
+			}
+			li {
+				background-color: transparentize( $blue, 0.1 );
+				color: $white;
+				cursor: pointer;
+				font-family: $sans;
+				font-size: 10px;
+				font-weight: 100;
+				line-height: 1;
+				padding: 10px;
+				width: 200px;
+				height: 10px;
+				&:hover {
+					background-color: transparentize( $blue, 0.25 );
+				}
+				&.active {
+					background-color: transparentize( $blue, 0.4 );
+				}
+			}
+		}
+	}
+}
+svg {
+	display: block;
+	margin: 100px auto;
+	text {
+		font-family: $sans;
+		font-size: 10px;
+		font-weight: 100;
+		text-transform: uppercase;
+	}
+}

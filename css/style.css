@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+#persist-header {
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  z-index: 2; }
+  #persist-header h1 {
+    color: #192f4e;
+    font-family: "Playfair Display";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    padding-top: 10px; }
+  #persist-header h2 {
+    color: #192f4e;
+    font-family: "Montserrat";
+    font-size: 10px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-top: 10px;
+    text-transform: uppercase; }
+
+#well {
+  position: relative; }
+
+.container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 960px;
+  width: 100%; }
+
+.tweet-embed {
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100%; }
+
+.text p {
+  color: #000000;
+  font-family: "Merriweather";
+  font-size: 20px;
+  line-height: 2;
+  margin: 40px auto;
+  width: 640px; }
+  .text p.first::first-line {
+    color: #FBC861;
+    font-weight: 800; }
+
+#item-0 {
+  background: linear-gradient(to right, #3868AF 0%, #5b3d02 100%);
+  padding: 100px 0;
+  width: 100%; }
+  #item-0 header {
+    padding: 100px 0; }
+    #item-0 header h1 {
+      color: #ffffff;
+      font-size: 75px;
+      font-family: "Playfair Display";
+      font-weight: 400;
+      text-align: center; }
+  #item-0 p {
+    color: #ffffff; }
+
+#item-1 section {
+  padding: 100px 0; }
+
+#viz-base-dropdown-name {
+  color: #3868AF; }
+
+#viz-comparator-dropdown-name {
+  color: #d79205; }
+
+#item-2 {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 100px 0; }
+  #item-2 header h1 {
+    font-family: "Playfair Display";
+    font-size: 40px;
+    line-height: 1;
+    margin: 0 auto;
+    width: 960px; }
+  #item-2 header .viz-dropdown-wrapper {
+    cursor: pointer;
+    display: inline;
+    position: relative; }
+  #item-2 header .viz-dropdown-name {
+    border-bottom: 1px dotted black; }
+  #item-2 header .viz-dropdown {
+    cursor: pointer;
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    left: 0; }
+    #item-2 header .viz-dropdown.active {
+      display: block; }
+    #item-2 header .viz-dropdown li {
+      background-color: rgba(56, 104, 175, 0.9);
+      color: #ffffff;
+      cursor: pointer;
+      font-family: "Montserrat";
+      font-size: 10px;
+      font-weight: 100;
+      line-height: 1;
+      padding: 10px;
+      width: 200px;
+      height: 10px; }
+      #item-2 header .viz-dropdown li:hover {
+        background-color: rgba(56, 104, 175, 0.75); }
+      #item-2 header .viz-dropdown li.active {
+        background-color: rgba(56, 104, 175, 0.6); }
+
+svg {
+  display: block;
+  margin: 100px auto; }
+  svg text {
+    font-family: "Montserrat";
+    font-size: 10px;
+    font-weight: 100;
+    text-transform: uppercase; }
+
+/*# sourceMappingURL=style.css.map */

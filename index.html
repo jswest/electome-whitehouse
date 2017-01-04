@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The White House Tweets</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<header id="persist-header">
+			<div class="container">
+				<h1>The White House Tweets</h1>
+				<h2>from The Laboratory for Social Machines at the MIT Media Lab</h2>
+			</div>
+		</header>
+		<div id="well">
+			<article id="item-0" class="item">
+				<header>
+					<div class="container">
+						<h1>The White House Tweets</h1>
+					</div>
+				</header>
+				<section>
+					<div class="container">
+						<div class="tweet-embed">
+							<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Hello, Twitter! It&#39;s Barack. Really! Six years in, they&#39;re finally giving me my own account.</p>&mdash; President Obama (@POTUS) <a href="https://twitter.com/POTUS/status/600324682190053376">May 18, 2015</a></blockquote>
+							<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+						</div>
+						<div class="text">
+							<p class="first">In October, Jimmy Kimmel selected some tweets sent by people about President Obama and recorded the President’s response. Here at the Laboratory for Social Machines, within the MIT Media Lab, we flipped Kimmel’s bit, selected some tweets sent by the President, and recorded how the American people responded. What did we find? No mean tweets, but several [policy-heavy tweets and sparsely engaged citizenry.]</p>
+						</div>
+					</div>
+				</section>
+			</article>
+			<article id="item-1" class="item">
+				<section>
+					<div class="container">
+						<div class="text">
+							<p class="first">Drawing from areas of computer science including machine learning, natural language processing, and network analysis, we explored how America responded to tweets from President Barack Obama (@potus), First Lady Michelle Obama (@flotus), and the White House (@whitehouse). Our algorithms categorized each tweet by issue, demography, and geography. We summarized the top tweeted issues by the President and America’s responses. Explore the replies yourself below!</p>
+						</div>
+					</div>
+				</section>
+			</article>
+			<article id="item-2" class="item">
+				<section>
+					<header>
+						<h1>Compare
+							<div class="viz-dropdown-wrapper">
+								<span id="viz-base-dropdown-name" class="viz-dropdown-name">@potus</span>
+								<ul class="viz-dropdown" id="viz-base-dropdown"></ul>
+							</div> with
+							<div class="viz-dropdown-wrapper">
+								<span id="viz-comparator-dropdown-name" class="viz-dropdown-name" >Election-engaged accounts</span>
+								<ul class="viz-dropdown" id="viz-comparator-dropdown"></ul>
+							</div>
+					</header>
+					<svg id="viz">
+					</svg>
+				</section>
+			</article>
+		</div>
+		<script src="js/d3.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
