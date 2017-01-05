@@ -4,9 +4,9 @@ $blue: #3868AF;
 $lightblue: #7BB0FF;
 $accent: #FBC861;
 
-$body: "Merriweather";
-$sans: "Montserrat";
-$serif: "Playfair Display";
+$body: "Times New Roman", "Times", serif;
+$sans: "Montserrat WF";
+$serif: "Playfair Display WF";
 
 * {
 	margin: 0;
@@ -77,6 +77,7 @@ p {
 		width: 640px;
 		&.first::first-line {
 			color: $accent;
+			font-family: $serif;
 			font-weight: 800;
 		}
 	}
