@@ -2,10 +2,16 @@
   margin: 0;
   padding: 0; }
 
+p a {
+  color: #FBC861;
+  cursor: pointer;
+  text-decoration: none; }
+  p a:hover {
+    text-decoration: underline; }
+
 #persist-header {
   background-color: rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
   position: fixed;
   top: 0;
   left: 0;
@@ -65,7 +71,7 @@
       color: #ffffff;
       font-size: 75px;
       font-family: "Playfair Display";
-      font-weight: 400;
+      font-weight: 800;
       text-align: center; }
   #item-0 p {
     color: #ffffff; }
@@ -83,8 +89,9 @@
   background-color: rgba(0, 0, 0, 0.1);
   padding: 100px 0; }
   #item-2 header p {
+    font-style: italic;
     margin: 10px auto;
-    width: 960px; }
+    width: 640px; }
   #item-2 header h1 {
     font-family: "Playfair Display";
     font-size: 40px;
@@ -130,5 +137,34 @@ svg {
     font-size: 10px;
     font-weight: 100;
     text-transform: uppercase; }
+
+#item-3 {
+  background: linear-gradient(to right, #3868AF 0%, #5b3d02 100%);
+  padding: 100px 0; }
+  #item-3 .text p {
+    color: #ffffff; }
+
+#item-4 {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 100px 0; }
+  #item-4 header h1 {
+    font-family: "Playfair Display";
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1; }
+  #item-4 .text p.first::first-line {
+    color: #3868AF; }
+
+#item-5 {
+  background: linear-gradient(to right, #3868AF 0%, #5b3d02 100%);
+  padding: 100px 0; }
+  #item-5 header h1 {
+    color: #FBC861;
+    font-family: "Playfair Display";
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1; }
+  #item-5 .text p {
+    color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */

@@ -39,6 +39,9 @@ d3.csv( 'data/all.csv', function ( response ) {
 		el.addEventListener( 'click', function () {
 			base = d3.select( el ).datum();
 			document.getElementById( 'viz-base-dropdown-name' ).innerHTML = map[base];
+			[].forEach.call( document.getElementsByClassName( 'viz-dropdown' ), function ( dropdown ) {
+				dropdown.classList.remove( 'active' );
+			} );
 			render();
 		} );
 	} );
@@ -47,6 +50,9 @@ d3.csv( 'data/all.csv', function ( response ) {
 		el.addEventListener( 'click', function () {
 			comparator = d3.select( el ).datum();
 			document.getElementById( 'viz-comparator-dropdown-name' ).innerHTML = map[comparator];
+			[].forEach.call( document.getElementsByClassName( 'viz-dropdown' ), function ( dropdown ) {
+				dropdown.classList.remove( 'active' );
+			} );
 			render();
 		} );
 	} );
@@ -62,7 +68,13 @@ d3.csv( 'data/all.csv', function ( response ) {
 		} ).concat( raw.map( function ( d ) {
 			return { topic: d.topic, location: 'comparator', value: parseFloat( d[comparator] ) };
 		} ) ).sort( function ( a, b ) {
-			return a.topic > b.topic ? 1 : -1;
+			if ( a.topic > b.topic ) {
+				return 1;
+			} else if ( a.topic < b.topic ) {
+				return -1;
+			} else {
+				return a.location > b.location ? 1 : -1;
+			}
 		} );
 
 
